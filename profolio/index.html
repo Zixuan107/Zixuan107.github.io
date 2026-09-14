@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Peter Fu</title>
+
+  <!-- Bootstrap -->
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Custom CSS -->
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    #research,
+    #projects,
+    #financial-agent,
+    #earnings-nlp,
+    #option-pricing {
+      scroll-margin-top: 80px;
+    }
+
+    /* =========================
+       RESEARCH SPACING
+    ========================== */
+
+    #research .project {
+      margin-bottom: 55px;
+    }
+
+    #research .project:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Keep text and images aligned vertically centered */
+    #research .project .row {
+      align-items: center;
+    }
+
+    /* =========================
+       RESEARCH FIGURES & IMAGES
+    ========================== */
+
+    #research .research-figure {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    #research .research-figure:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Uniformly scale down all research section images */
+    #research .research-image {
+      width: 68%;
+      max-width: 270px;
+      display: block;
+      margin: 0 auto;
+      height: auto;
+    }
+
+    .figure-caption {
+      font-size: 0.85rem;
+      color: #6c757d;
+      margin-top: 6px;
+    }
+
+    /* =========================
+       PROJECT SPACING
+    ========================== */
+
+    #projects .simple-item {
+      margin-bottom: 35px;
+    }
+
+    #projects .simple-item:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+  <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom">
+
+    <div class="container">
+
+      <a class="navbar-brand fw-semibold" href="index.html">
+        Peter Fu
+      </a>
+
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbar"
+        aria-controls="navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbar">
+
+        <ul class="navbar-nav ms-auto">
+
+          <!-- HOME -->
+          <li class="nav-item">
+
+            <a
+              class="nav-link active"
+              href="index.html"
+            >
+              Home
+            </a>
+
+          </li>
+
+
+          <!-- RESEARCH -->
+          <li class="nav-item">
+
+            <a
+              class="nav-link"
+              href="index.html#research"
+            >
+              Research
+            </a>
+
+          </li>
+
+
+          <!-- PROJECTS -->
+          <li class="nav-item">
+
+            <a
+              class="nav-link"
+              href="index.html#projects"
+            >
+              Projects
+            </a>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- =========================
+       MAIN CONTENT
+  ========================== -->
+
+  <main class="container page-container">
+
+    <!-- =========================
+         HERO
+    ========================== -->
+    <div class="row align-items-center hero">
+
+      <div class="col-md-8">
+
+        <h1>
+          Peter Fu
+        </h1>
+
+
+        <p class="lead">
+          CS & Business @ the University of Michigan.
+        </p>
+
+
+        <p>
+          I'm interested in artificial intelligence, LLM agents,
+          algorithms, optimization, software systems, and quantitative
+          finance.
+        </p>
+
+
+        <p>
+          My current work focuses on efficient adaptation methods for
+          large language model agents and computational approaches to
+          decision-making.
+        </p>
+
+
+        <!-- SOCIAL LINKS -->
+        <div class="links">
+
+          <a
+            href="https://github.com/zixuan107"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+
+
+          <span>·</span>
+
+
+          <a
+            href="https://www.linkedin.com/in/zixuan-peter-fu-2976772a8/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+
+
+          <span>·</span>
+
+
+          <a href="mailto:zixuan1002.fu@gmail.com">
+            Email
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- HEADSHOT -->
+      <div class="col-md-4 text-center">
+
+        <img
+          src="assets/website-headshot.png"
+          alt="Peter Fu"
+          class="profile-image"
+        >
+
+      </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+    <section>
+
+      <h2>
+        About
+      </h2>
+
+
+      <p>
+        I'm a student at the University of Michigan studying Computer
+        Science and Business through the Integrated Business and
+        Engineering dual-degree program, with an intended minor in mathematics.
+      </p>
+
+
+      <p>
+        Currently, I am an AI researcher at LAUNCH Lab at the University of Michigan, 
+        focusing on improving the efficiency of large language models and agentic AI systems. 
+        Prior to this, I
+        conducted AI research at the University of Chinese Academy of Sciences, where I
+        focused on designing deep learning models to capture statistical patterns in
+        cryptographic algorithms.
+      </p>
+
+
+      <p>
+        I enjoy building personal projects that apply AI
+        to real-world problems, from IrrigOpt AI for precision agriculture to
+        computational models for market analysis and financial decision-making.
+        Outside of research and building projects, I enjoy playing soccer,
+        hiking, exploring new places, and cooking for friends and family.
+        I'm also interested in entrepreneurship and markets, and I like
+        learning about how technology can turn ideas into useful products.
+      </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         RESEARCH
+    ========================== -->
+    <section id="research">
+
+      <h2>
+        Research
+      </h2>
+
+
+      <!-- =====================================================
+           1. LLM AGENTS
+           TEXT LEFT / IMAGE RIGHT
+      ====================================================== -->
+      <article class="project">
+
+        <div class="row align-items-center gx-5">
+
+          <!-- TEXT -->
+          <div class="col-md-7">
+
+            <h3>
+              Efficient Test-Time Adaptation for LLM Agents
+            </h3>
+
+
+            <p class="metadata">
+              University of Michigan · 2026–Present
+            </p>
+
+
+            <p>
+              Investigating efficient test-time training and adaptation
+              methods for large language model agents.
+            </p>
+
+
+            <p>
+              The work focuses on context-specific parameter adaptation,
+              inference efficiency, and reducing computational overhead
+              while preserving reasoning performance and downstream task
+              quality.
+            </p>
+
+
+            <p class="tags">
+              LLM Agents · Test-Time Training · Optimization · PyTorch
+            </p>
+
+          </div>
+
+
+          <!-- IMAGE -->
+          <div class="col-md-5">
+
+            <div class="research-figure">
+
+              <img
+                src="assets/llm-rep.png"
+                alt="LLM representation and adaptation research"
+                class="research-image"
+              >
+
+
+              <p class="figure-caption">
+                Representation and parameter adaptation for efficient
+                test-time learning in LLM agents.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =====================================================
+           2. DES NEURAL CRYPTANALYSIS
+           IMAGES LEFT / TEXT RIGHT
+      ====================================================== -->
+      <article class="project">
+
+        <div class="row align-items-center gx-5">
+
+          <!-- IMAGES -->
+          <div class="col-md-5">
+
+            <!-- DES CIPHER -->
+            <div class="research-figure">
+
+              <img
+                src="assets/des-chiper.png"
+                alt="DES cipher architecture"
+                class="research-image"
+              >
+
+
+              <p class="figure-caption">
+                DES cipher structure used in the neural cryptanalysis pipeline.
+              </p>
+
+            </div>
+
+
+            <!-- DES TRAINING -->
+            <div class="research-figure">
+
+              <img
+                src="assets/des-training.png"
+                alt="DES neural cryptanalysis training results"
+                class="research-image"
+              >
+
+
+              <p class="figure-caption">
+                Neural distinguisher training and evaluation performance.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- TEXT -->
+          <div class="col-md-7">
+
+            <h3>
+              Neural Cryptanalysis of DES
+            </h3>
+
+
+            <p class="metadata">
+              University of Chinese Academy of Sciences · 2024–2026
+            </p>
+
+
+            <p>
+              Investigated deep learning approaches to cryptanalysis of
+              reduced-round Data Encryption Standard (DES), studying how
+              neural networks can identify statistical structure within
+              generated cryptographic datasets.
+            </p>
+
+
+            <p>
+              Designed and evaluated deep neural network architectures for
+              key-recovery experiments, achieving up to 96.8% classification
+              accuracy on generated cryptanalytic datasets.
+            </p>
+
+
+            <p class="tags">
+              Deep Learning · DES · Neural Cryptanalysis · Cryptographic Algorithms
+            </p>
+
+
+            <div class="project-links">
+
+              <a
+                href="assets/JRHS-Research-Paper.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Paper →
+              </a>
+
+
+              <a
+                href="https://www.journalresearchhs.org/_files/ugd/ebf144_e0754ec485b747dc8c69526387324ff0.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on JRHS →
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =====================================================
+           3. CRAFT-64
+           TEXT LEFT / IMAGES RIGHT
+      ====================================================== -->
+      <article class="project">
+
+        <div class="row align-items-center gx-5">
+
+          <!-- TEXT -->
+          <div class="col-md-7">
+
+            <h3>
+              ResNet-Based Neural Cryptanalysis of CRAFT-64
+            </h3>
+
+
+            <p class="metadata">
+              University of Chinese Academy of Sciences · 2024–2026
+            </p>
+
+
+            <p>
+              Investigated CNN- and ResNet-based neural distinguishers
+              designed to learn higher-order cryptographic patterns from
+              VDS-generated datasets for the CRAFT-64 block cipher.
+            </p>
+
+
+            <p>
+              Explored bit-sensitivity analysis to study how individual
+              input features influence neural distinguisher performance
+              and learned cryptographic representations.
+            </p>
+
+
+            <p class="tags">
+              ResNet · CNN · CRAFT-64 · Neural Distinguishers · Bit-Sensitivity
+            </p>
+
+
+            <p class="metadata">
+              Research manuscript in progress
+            </p>
+
+          </div>
+
+
+          <!-- IMAGES -->
+          <div class="col-md-5">
+
+            <!-- RESNET -->
+            <div class="research-figure">
+
+              <img
+                src="assets/resnet.webp"
+                alt="ResNet architecture for CRAFT-64 neural cryptanalysis"
+                class="research-image"
+              >
+
+
+              <p class="figure-caption">
+                ResNet-based neural distinguisher architecture for
+                cryptographic pattern recognition.
+              </p>
+
+            </div>
+
+
+            <!-- BIT SENSITIVITY -->
+            <div class="research-figure">
+
+              <img
+                src="assets/bit sensitivity.png"
+                alt="Bit sensitivity analysis for CRAFT-64 neural cryptanalysis"
+                class="research-image"
+              >
+
+
+              <p class="figure-caption">
+                Bit-sensitivity analysis measuring the influence of
+                individual input features on distinguisher performance.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =====================================================
+           4. AI & GREEN TECHNOLOGY
+           IMAGES LEFT / TEXT RIGHT
+      ====================================================== -->
+      <article class="project">
+
+        <div class="row align-items-center gx-5">
+
+          <!-- IMAGES -->
+          <div class="col-md-5">
+
+            <!-- MONTE CARLO -->
+            <div class="research-figure">
+
+              <img
+                src="assets/MC-box.png"
+                alt="Monte Carlo weather variable distributions"
+                class="research-image"
+              >
+
+
+              <p class="figure-caption">
+                Monte Carlo weather-variable distributions used to model
+                uncertainty in environmental forecasting.
+              </p>
+
+            </div>
+
+
+            <!-- LSTM BAYESIAN -->
+            <div class="research-figure">
+
+              <img
+                src="assets/LSTM-bayesian.png"
+                alt="LSTM Bayesian environmental forecasting model"
+                class="research-image"
+              >
+
+
+              <p class="figure-caption">
+                LSTM-based forecasting with Bayesian uncertainty estimation.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- TEXT -->
+          <div class="col-md-7">
+
+            <h3>
+              Spatiotemporal Modeling of multivariate Climate Variables  
+            </h3>
+
+
+            <p class="metadata">
+              International Conference on Advancing Sustainable Futures
+              (ICASF, Track: AI & Green Technology) · 2025
+            </p>
+
+
+            <p>
+              Presented research on the application of artificial intelligence
+              and time-series forecasting to environmental and agricultural
+              systems.
+            </p>
+
+
+            <p>
+              The work explored data-driven approaches to climate forecasting,
+              irrigation decision-making, and resource optimization using
+              machine learning models trained on long-term environmental data.
+            </p>
+
+
+            <p class="tags">
+              Artificial Intelligence · Green Technology · Forecasting ·
+              Environmental Applications
+            </p>
+
+
+            <div class="project-links">
+
+              <a
+                href="YOUR_ICASF_LINK"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Conference →
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </section>
+
+
+
+    <!-- =========================
+         PROJECTS
+    ========================== -->
+    <section id="projects">
+
+      <h2>
+        Projects
+      </h2>
+
+
+      <!-- =========================
+           PROJECT 1
+      ========================== -->
+      <article
+        id="financial-agent"
+        class="simple-item"
+      >
+
+        <h3>
+          LLM Financial Agent Evaluation Platform
+        </h3>
+
+
+        <p class="metadata">
+          Python · FastAPI · PostgreSQL · React · LLM APIs
+        </p>
+
+
+        <p>
+          Built an evaluation platform for benchmarking LLM agents
+          on financial research and numerical reasoning tasks,
+          measuring accuracy, tool use, latency, and token efficiency.
+        </p>
+
+      </article>
+
+
+
+      <!-- =========================
+           PROJECT 2
+      ========================== -->
+      <article
+        id="earnings-nlp"
+        class="simple-item"
+      >
+
+        <h3>
+          Earnings-Call NLP Platform
+        </h3>
+
+
+        <p class="metadata">
+          Python · PyTorch · Hugging Face · FastAPI · PostgreSQL
+        </p>
+
+
+        <p>
+          Developed an NLP pipeline for analyzing earnings-call
+          transcripts, separating management and analyst sentiment
+          and tracking topic-specific changes across reporting periods.
+        </p>
+
+      </article>
+
+
+
+      <!-- =========================
+           PROJECT 3
+      ========================== -->
+      <article
+        id="option-pricing"
+        class="simple-item"
+      >
+
+        <h3>
+          Option Pricing Model
+        </h3>
+
+
+        <p class="metadata">
+          Python · NumPy · SciPy · Quantitative Finance
+        </p>
+
+
+        <p>
+          Implemented Black-Scholes option pricing for European calls
+          and puts and analyzed price sensitivity across strike price,
+          volatility, interest rates, and time to maturity.
+        </p>
+
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- Bootstrap JavaScript -->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+</body>
+
+</html>

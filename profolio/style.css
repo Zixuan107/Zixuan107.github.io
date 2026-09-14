@@ -1,0 +1,377 @@
+/* ==========================================================
+   GLOBAL / BODY
+========================================================== */
+
+body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  color: #262626;
+  background: #ffffff;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   NAVIGATION
+========================================================== */
+
+.navbar {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.navbar-brand {
+  font-size: 20px;
+}
+
+.nav-link {
+  color: #555;
+  margin-left: 12px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #111;
+}
+
+
+/* ==========================================================
+   MAIN PAGE LAYOUT
+========================================================== */
+
+.page-container {
+  max-width: 1100px;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.page-title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+
+/* ==========================================================
+   TYPOGRAPHY
+========================================================== */
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+a {
+  color: #2867b2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* ==========================================================
+   HOME / HERO
+========================================================== */
+
+.hero {
+  margin-bottom: 80px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+
+/* ==========================================================
+   PROFILE IMAGE
+========================================================== */
+
+.profile-image {
+  width: 230px;
+  height: 230px;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 6px;
+}
+
+
+/* ==========================================================
+   SOCIAL LINKS
+========================================================== */
+
+.links {
+  margin-top: 25px;
+}
+
+.links span {
+  margin: 0 8px;
+  color: #aaa;
+}
+
+
+/* ==========================================================
+   GENERAL SECTIONS
+========================================================== */
+
+section {
+  margin-top: 60px;
+}
+
+.simple-item {
+  margin-top: 30px;
+}
+
+
+/* ==========================================================
+   PROJECT / RESEARCH SECTIONS
+========================================================== */
+
+.project {
+  padding-bottom: 70px;
+  margin-bottom: 70px;
+
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.project:last-child {
+  border-bottom: none;
+}
+
+
+/* ==========================================================
+   METADATA / TAGS
+========================================================== */
+
+.metadata {
+  color: #777;
+  font-size: 15px;
+
+  margin-bottom: 20px;
+}
+
+.tags {
+  color: #666;
+  font-size: 14px;
+
+  margin-top: 22px;
+}
+
+
+/* ==========================================================
+   PROJECT LINKS
+========================================================== */
+
+.project-links {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.project-links a {
+  margin-right: 20px;
+}
+
+
+/* ==========================================================
+   NORMAL PROJECT IMAGES
+========================================================== */
+
+.project-image {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  border-radius: 6px;
+  border: 1px solid #eeeeee;
+}
+
+
+/* ==========================================================
+   RESEARCH FIGURES
+========================================================== */
+
+.research-figure {
+  margin-bottom: 28px;
+}
+
+.research-figure:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ==========================================================
+   RESEARCH IMAGES
+========================================================== */
+
+.research-image {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+
+  padding: 4px;
+  background: #ffffff;
+}
+
+
+/* ==========================================================
+   FIGURE CAPTIONS
+========================================================== */
+
+.figure-caption {
+  margin-top: 8px;
+  margin-bottom: 0;
+
+  font-size: 13px;
+  line-height: 1.5;
+
+  color: #777;
+  text-align: center;
+}
+
+
+/* ==========================================================
+   PROJECT IMAGE GALLERY
+========================================================== */
+
+.project-gallery {
+  margin-top: 25px;
+}
+
+.project-gallery .project-image {
+  width: 100%;
+}
+
+
+/* ==========================================================
+   LARGE PROJECT IMAGE
+========================================================== */
+
+.project-image-large {
+  width: 100%;
+  max-width: 800px;
+
+  height: auto;
+
+  display: block;
+
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ==========================================================
+   PERSONAL PAGE
+========================================================== */
+
+.personal-section {
+  margin-bottom: 60px;
+}
+
+
+/* ==========================================================
+   MOBILE / TABLET
+========================================================== */
+
+@media (max-width: 768px) {
+
+  .page-container {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  /* HERO */
+
+  .hero {
+    text-align: left;
+    margin-bottom: 60px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+
+  /* PROFILE IMAGE */
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+
+    margin-top: 35px;
+  }
+
+
+  /* PROJECT / RESEARCH */
+
+  .project {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+
+  .project-image {
+    margin-top: 25px;
+  }
+
+  .research-image {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .research-figure {
+    margin-bottom: 24px;
+  }
+
+
+  /* TYPOGRAPHY */
+
+  .page-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+}
